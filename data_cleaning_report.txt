@@ -1,0 +1,28 @@
+Loaded raw file: 1915 rows, 32 columns
+Dropped 5 completely blank rows (kept Record_ID only)
+Trimmed whitespace on 15 text columns
+Parsed Production_Date across 5 mixed input formats (0 could not be parsed)
+Fixed 22 negative Actual_Quantity_Produced values (converted to absolute value)
+Fixed 19 negative Cycle_Time_Sec values (converted to absolute value)
+Flagged 18 Defect_Count values of 99999 as data-entry errors -> set to missing
+Capped 29 OEE_Percent values that exceeded the physical maximum of 100%
+Imputed 272 missing values in Batch_Size using Product_Line median
+Imputed 12 missing values in Actual_Quantity_Produced using Product_Line median
+Imputed 18 missing values in Defect_Count using Product_Line median
+Imputed 26 missing values in Energy_Consumption_kWh using Product_Line median
+Imputed 18 missing values in Scrap_Cost_USD using Product_Line median
+Filled 86 missing values in Plant_Location with 'Unknown'
+Filled 74 missing values in Shift with 'Unknown'
+Filled 65 missing values in Operator_ID with 'Unknown'
+Filled 377 missing values in Supervisor_Name with 'Unknown'
+Filled 226 missing values in Raw_Material with 'Unknown'
+Filled 259 missing values in Supplier_Name with 'Unknown'
+Filled 249 missing values in Quality_Grade with 'Not Graded'
+Filled 390 missing values in Inspection_Passed with 'Not Recorded'
+Filled 521 missing values in Maintenance_Status with 'Not Scheduled'
+Filled 498 missing values in Remarks with 'No Remarks'
+Removed 0 exact duplicate rows
+Added derived columns: Yield_Percent, Defect_Rate_Percent
+
+Final cleaned dataset: 1910 rows, 34 columns
+Saved cleaned file to manufacturing_production_cleaned.csv
